@@ -99,35 +99,35 @@
 				<p class="card-text">How can we help?</p>
 				  <h4 class="card-title">Get in touch!</h4>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="#" style="background-color: #27b8d4; " class="btn btn-primary justify-content-center;">Contact Us</a>
+				  <a href="#" style="background-color:  #6C63FF; " class="btn btn-primary justify-content-center;">Contact Us</a>
 			</div>
 		</div>
 		<div class="myForm">
-			<h1>Authority For Release Of Medical Records</h1>
+			<h1 style="text-align: center;">Authority For Release Of Medical Records</h1>
 			<form>
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="First Name" style = "margin-right:30px" required/>
-					<input type="text" class="form-control" placeholder="Last Name" required/>
+					<input type="text" class="form-control" placeholder="First Name" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
+					<input type="text" class="form-control" placeholder="Last Name;" style=" border: none; border-bottom: 2px solid;" required/>
 				</div>
 				<div class="input-group">
-					<input type="email" class="form-control" placeholder="Email" style = "margin-right:30px" required/>
-					<input type="number" class="form-control" placeholder="Phone" required/>
+					<input type="email" class="form-control" placeholder="Email" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
+					<input type="number" class="form-control" placeholder="Phone" style="border: none; border-bottom: 2px solid;" required/>
 				</div>
 	
-				<input type="text" class="form-control" placeholder="Address" style = "margin-top:30px" required>
-				<input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px" required>
+				<input type="text" class="form-control" placeholder="Address" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
+				<input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
 	
 				<div class="input-group">
-					<input type="date" class="form-control" placeholder="Date of Accident" style = "margin-right:30px" required/>
-					<input type="number" class="form-control" placeholder="Reference No." required/>
+					<input type="date" class="form-control" placeholder="Date of Accident" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
+					<input type="number" class="form-control" placeholder="Reference No." style="border: none; border-bottom: 2px solid;" required/>
 				</div>
 	
-				<h3 style="margin-top: 50px;">Medical Record Details</h3>
-				<h5>Please supply details of all locations to enable us to retrieve your medical record data.</h5>
+				<h3 style="margin-top: 50px; text-align: center;">Medical Record Details</h3>
+				<h5 style="font-size: 1.1rem; text-align: center;">(Please supply details of all locations to enable us to retrieve your medical record data.)</h5>
 	
 				<div id="locationBox">
 					<div class="form-group">
-						<select class="form-control" id="exampleFormControlSelect1">
+						<select class="form-control" id="exampleFormControlSelect1" style="border: none; border-bottom: 2px solid;">
 						  <option>GP Records</option>
 						  <option>Hospital Records</option>
 						  <option>X-rays</option>
@@ -140,30 +140,37 @@
 						</select>
 					  </div>
 					  
-					  <input type="text" class="form-control" placeholder="Location Name" style = "margin-top:30px" required>
+					  <input type="text" class="form-control" placeholder="Location Name" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
 		  
 					  <div class="form-group">
-						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px" placeholder="Address" rows="3" required></textarea>
+						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid;" placeholder="Address" rows="3" required></textarea>
 					  </div>
 		  
-					  <input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px" required>
+					  <input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
 		  
 					  <div class="form-group">
-						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px" placeholder="Additional Notes" rows="3" required></textarea>
+						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid;" placeholder="Additional Notes" rows="3" required></textarea>
 					  </div>
 		  
-					  <button type="button" class="btn btn-primary" id="addLocation" style="background-color : #27b8d4; float: right; margin : 10px;">Add Location</button>
+					  <button type="button" class="btn btn-primary" id="addLocation" style="border: none; background-color : #6C63FF; float: right; margin : 10px;">Add Location</button>
 	
 	
 				</div>
 				<p style="margin-top: 60px;">I HEREBY AUTHORISE AND REQUEST YOU to forward copies of my full and unexpurgated medical records to Apex Medico.				I confirm that no litigation is contemplated against you or any other member of your staff.</p>
 	
-				<div>
-					<canvas id="canvas" class='img-responsive' style="border: 1px solid black; background-color: #fff"></canvas>
-	
+				<div style="text-align: center;">
+					<canvas id="canvas" class='img-responsive' style="border: 2px solid #6C63FF; background-color: #fff; margin: 10px; width: 90%; height: 200px;"></canvas>
 				</div>
-	
-				<button type="button" style="background-color: #27b8d4; margin-top: 30px;" class="btn btn-primary">Submit</button>
+        
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Please tick to consent to your data being stored in line with the guidelines set out in our privacy policy
+          </label>
+        </div>
+
+        <button type="button" style="background-color:  #6C63FF; margin-top: 30px;" class="btn btn-primary">Submit</button>
+
 	
 			</form>
 		</div>

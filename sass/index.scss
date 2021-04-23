@@ -1,23 +1,30 @@
-@import './style.scss';
+@import './style';
 body{
-    background-color: #eeebeb;
+    background-color: #fffcfc;
 }
 .nav-bar{
     width: 100%;
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.302);
     background-color: rgb(26, 26, 26);
 }
-
+.container{
+    max-width: 1200px;
+}
 .header{
     min-height: 90vh;
     width: 100vw;
-    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0.192)), url(../img/header2.jpg);
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.342)), url(../img/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+input::placeholder,
+textarea::placeholder{
+    font-size: 20px !important;
 }
 
 .header-content{
@@ -29,66 +36,52 @@ body{
 }
 .service-cont{
     padding: 3vh 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .service-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-left{
+            flex: 1;
+
+            p{
+                font-size: 20px;
+            }
+        }
+
+        &-right{
+            height: 300px;
+            width: 300px;
+            max-width: 30%;
+            margin: 2rem;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        
+    }
 }
 
 .heading{
-    justify-self: flex-start;
     color: #002F80;
     text-align: center;
     margin: 2rem;
+    font-size: 30px;
 }
 
-
-.services-cont{
-    align-self: center;
-    width: 100%;
-    margin-top: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service-item{
-    /* padding: 2rem 1rem;
-    width: 300px;
-    border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: 1px 3px 10px rgba(#000,.3);
-    margin: 10px; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    margin: 1rem;
-    padding: 4vh 2vh;
-    box-shadow: 1px 3px 10px rgba(#000,.3);
-    border-radius: 1rem;
-    transition: all .3s;
-}
-
-.service-item:hover{
-    transform: translateY(-3px);
-    box-shadow: 1px 5px 20px rgba(#000,.3);
-
-}
-.left{
-    width: 50%;
-    height: 100%;
-    min-width: 280px;
-    margin: 2rem;
-}
 
 .nav-link{
     text-transform: capitalize;
-}
-.right{
-    width: 50%;
-    height: 100%;
-    min-width: 280px;
 }
 .icon{
     margin-bottom: 10px;
@@ -101,12 +94,62 @@ p{
     font-size: 1.5rem;
 }
 .about-cont{
-    min-height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: justify;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    .left{
+        width: 50%;
+        min-width: 250px;
+        padding: 0 2rem;
+
+        h1{
+            font-size: 30px;
+            text-transform: capitalize;
+            color: #002F80;
+            margin: 2rem 0 1rem 0;
+        }
+
+        p{
+            font-size: 17px;
+            letter-spacing: 1.6px;
+        }
+
+    }
+
+    .right{
+        width: 50%;
+        min-width: 250px;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .img-box{
+            height: 90%;
+            width: 90%;
+            min-height: 200px;
+            min-width: 200px;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width:813px){
+        .left{
+            width: 100%;
+        }
+
+        .right{
+           display: none;
+        }
+    }
 }
 
 
@@ -154,7 +197,7 @@ a{
     width: 100%;
     outline: none;
     border: none;
-    background-color:#002F80;
+    background-color:#6C63FF;
     padding: .5rem 1.5rem;
     font-size: 15px;
     color: #f9f9f9;
