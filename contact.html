@@ -2,7 +2,7 @@
 <html>
 
 <!-- Head -->
-<head>
+<head style="font-family: Raleway, sans-serif;">
 
 	<title>Form</title>
 
@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<!-- //Meta-Tags -->
-
+        
 	<!-- Style --> <link rel="stylesheet" href="./css/index.css" type="text/css" media="all">
 	<!-- CSS only -->
 <!-- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -19,8 +19,8 @@
 
 </head>
 
-<body>
-	<div class="nav-bar">
+<body >
+	<div class="nav-bar" style="font-family: Raleway, sans-serif;">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">Apex Medico</a>
@@ -61,7 +61,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="#">insurance</a>
+                        <a class="nav-link" href="#">Insurance</a>
                       </li>
 
                       <li class="nav-item">
@@ -89,37 +89,46 @@
         </div>
     </div>
 
-	<div class="headerCL">
+	<div class="headerCL" style="font-family: Montserrat, sans-serif;">
 		<h1>Industry Leading Appointment Portal System For Medical Experts , Claimants and Solicitors.</h1>
 	</div>
 
-	<div class="parent">
+	<div class="parent" style="font-family: Montserrat, sans-serif;">
 		<div class="card border border-dark card-cont" style="width: 18rem; margin-top: 30px; margin-right: 20px; margin-bottom:20px; border-top: 1px solid;">
 			<div class="card-body">
 				<p class="card-text">How can we help?</p>
 				  <h4 class="card-title">Get in touch!</h4>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="#" style="background-color:  #6C63FF; " class="btn btn-primary justify-content-center;">Contact Us</a>
+				  <a href="#" style="background-color:  #617ebd; " class="btn btn-primary justify-content-center;">Contact Us</a>
 			</div>
 		</div>
 		<div class="myForm">
-			<h1 style="text-align: center;">Authority For Release Of Medical Records</h1>
+			<h1 style="text-align: center; padding-top: 2%;">Authority For Release Of Medical Records</h1>
 			<form>
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="First Name" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
-					<input type="text" class="form-control" placeholder="Last Name;" style=" border: none; border-bottom: 2px solid;" required/>
+					<input type="text" class="form-control" placeholder="First Name" style = "margin-right:30px; border: none; border-bottom: 2px solid #617ebd; color: #617ebd; max-width: 120%;" required/>
 				</div>
+                <div class="input-group">
+					<input type="text" class="form-control" placeholder="Last Name" style = "margin-right:30px; border: none; border-bottom: 2px solid #617ebd; max-width: 100%;" required/>
+                    </div>
 				<div class="input-group">
-					<input type="email" class="form-control" placeholder="Email" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
-					<input type="number" class="form-control" placeholder="Phone" style="border: none; border-bottom: 2px solid;" required/>
+					<input type="email" class="form-control" placeholder="Email" style = "margin-right:30px; border: none; border-bottom: 2px solid #617ebd; max-width: 100%;" required/>
+					
 				</div>
-	
-				<input type="text" class="form-control" placeholder="Address" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
-				<input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
-	
+        <div class="input-group">
+					
+					<input type="number" class="form-control" placeholder="Phone" style="border: none; border-bottom: 2px solid #617ebd; max-width: 100%; margin-right: 30px;" required/>
+				</div>
+        
+        <div style="margin-right: 30px;">
+          <input type="text" class="form-control" placeholder="Address" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd; margin-right: 30px;" required>
+          <input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd; margin-right: 30px;" required>
+  
+        </div>
+					
 				<div class="input-group">
-					<input type="date" class="form-control" placeholder="Date of Accident" style = "margin-right:30px; border: none; border-bottom: 2px solid;" required/>
-					<input type="number" class="form-control" placeholder="Reference No." style="border: none; border-bottom: 2px solid;" required/>
+					<input type="text" class="form-control" placeholder="Date of Accident" style = "margin-right:30px; border: none; border-bottom: 2px solid #617ebd;margin-right: 30px;" required/>
+					<input type="number" class="form-control" placeholder="Reference No." style="border: none; border-bottom: 2px solid #617ebd; margin-right: 30px;" required/>
 				</div>
 	
 				<h3 style="margin-top: 50px; text-align: center;">Medical Record Details</h3>
@@ -127,8 +136,9 @@
 	
 				<div id="locationBox">
 					<div class="form-group">
-						<select class="form-control" id="exampleFormControlSelect1" style="border: none; border-bottom: 2px solid;">
-						  <option>GP Records</option>
+						<select class="form-control" id="exampleFormControlSelect1" style="border: none; border-bottom: 2px solid #617ebd; font-family: Montserrat, sans-serif;">
+						  <option >Please Select Medical Record Type</option>
+              <option>GP Records</option>
 						  <option>Hospital Records</option>
 						  <option>X-rays</option>
 						  <option>Physiotherapy Records</option>
@@ -140,43 +150,54 @@
 						</select>
 					  </div>
 					  
-					  <input type="text" class="form-control" placeholder="Location Name" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
+					  <input type="text" class="form-control" placeholder="Location Name" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd;" required>
 		  
 					  <div class="form-group">
-						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid;" placeholder="Address" rows="3" required></textarea>
+						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd;" placeholder="Address" rows="3" required></textarea>
 					  </div>
 		  
-					  <input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid;" required>
-		  
+					  <input type="number" class="form-control" placeholder="Post Code" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd;" required>
+            <input type="number" class="form-control" placeholder="Contact Telephone" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd;" required>
 					  <div class="form-group">
-						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid;" placeholder="Additional Notes" rows="3" required></textarea>
+						  <textarea class="form-control" id="exampleFormControlTextarea1" style = "margin-top:30px; border: none; border-bottom: 2px solid #617ebd;;" placeholder="Additional Notes" rows="3" required></textarea>
 					  </div>
 		  
-					  <button type="button" class="btn btn-primary" id="addLocation" style="border: none; background-color : #6C63FF; float: right; margin : 10px;">Add Location</button>
 	
 	
 				</div>
-				<p style="margin-top: 60px;">I HEREBY AUTHORISE AND REQUEST YOU to forward copies of my full and unexpurgated medical records to Apex Medico.				I confirm that no litigation is contemplated against you or any other member of your staff.</p>
-	
+
+        <button type="button" class="btn btn-primary" id="addLocation" style="border: none; background-color: #617ebd; float: right; margin : 10px;">Add Location</button>
+
+				<p style="margin-top: 60px;">I HEREBY AUTHORISE AND REQUEST YOU to forward copies of my full and unexpurgated medical records to APEX MEDICO.</p>
+        <p style="margin-top: 05px;">I confirm that no litigation is contemplated against you or any other member of your staff.</p>
 				<div style="text-align: center;">
-					<canvas id="canvas" class='img-responsive' style="border: 2px solid #6C63FF; background-color: #fff; margin: 10px; width: 90%; height: 200px;"></canvas>
-				</div>
+					<canvas id="canvas" class='img-responsive' style="border: 3px solid #d6d5e2; background-color: rgb(250, 243, 243); margin: 10px; width: 90%; height: 200px;"></canvas>
+          <br>
+          <button type="button" class="btn btn-primary" id="delete" style="float: left; margin-right: 2%; margin-left: 5%; background-color: #617ebd; border: none;">Delete</button>
+          <button type="button" class="btn btn-primary" id="reDo" style="float: left;background-color: #617ebd; border: none;">Undo</button>
+          <button type="button" class="btn btn-primary" id="save" style="float: right; margin-right: 5%; background-color: #617ebd; border: none;">Save</button>
+
+          <br><br><br>
+
+        </div>
         
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Please tick to consent to your data being stored in line with the guidelines set out in our privacy policy
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="height:15px; width:15px; padding-left: 50px;">
+          <label class="form-check-label" for="flexCheckDefault" style="padding-left: 10px;">
+            Please tick to consent to your data being stored in line with the guidelines set out in our <a href="#">Privacy Policy</a>
           </label>
         </div>
 
-        <button type="button" style="background-color:  #6C63FF; margin-top: 30px;" class="btn btn-primary">Submit</button>
+        <button type="submit" style="background-color:  #6d89c5; margin-top: 30px; float:right" class="btn btn-primary" >
+          Submit Authorisation
+          </button>
 
 	
 			</form>
 		</div>
 	</div>
 
-	<section class="footer">
+	<section class="footer" style="font-family: Montserrat, sans-serif;">
         <div class="container">
             <div class="footer-cont">
                 <p>Opening Time : 9:00AM &dash; 5:00PM</p>

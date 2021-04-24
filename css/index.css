@@ -1,6 +1,14 @@
 .headerCL {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.233)), to(rgba(0, 0, 0, 0.116))), url("../img/group.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.116)), url("../img/group.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.233)),
+      to(rgba(0, 0, 0, 0.116))
+    ),
+    url("../img/group.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.116)),
+    url("../img/group.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -9,18 +17,20 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #f9f9f9;
+  
 }
 
 .headerCL h1 {
   padding-top: 20vh;
   text-align: center;
   width: 80%;
+  
 }
 
 .parent {
@@ -28,11 +38,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 2rem 1rem;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .myForm {
@@ -43,11 +53,12 @@
   padding: 2%;
   width: 70%;
   background-color: white;
-  border: 2px solid  #6C63FF;
+  border: 2px solid #d6d5e2;
+  
 }
 
 #locationBox {
-  background-color: #fff !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .myForm h1,
@@ -56,7 +67,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #6C63FF;
+  color: #6c67cf;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-group {
@@ -65,8 +77,9 @@ h6 {
 
 #locationBox {
   padding: 2%;
-  background-color: #d5e2e2;
+  background-color: #ffffff;
   padding-bottom: 100px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #canvas {
@@ -86,15 +99,15 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -111,7 +124,7 @@ body {
 .nav-bar {
   width: 100%;
   -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.302);
-          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.302);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.302);
   background-color: #1a1a1a;
 }
 
@@ -122,8 +135,20 @@ body {
 .header {
   min-height: 90vh;
   width: 100vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.329)), to(rgba(0, 0, 0, 0.342))), url(../img/bg3.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.342)), url(../img/bg3.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0.329)),
+      to(rgba(0, 0, 0, 0.342))
+    ),
+    url(../img/bg3.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.329),
+      rgba(0, 0, 0, 0.342)
+    ),
+    url(../img/bg3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,11 +156,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 input::-webkit-input-placeholder,
@@ -156,6 +181,7 @@ textarea::-ms-input-placeholder {
 input::placeholder,
 textarea::placeholder {
   font-size: 20px !important;
+  
 }
 
 .header-content {
@@ -173,15 +199,15 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .service-cont .service-item {
@@ -190,19 +216,19 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .service-cont .service-item-left {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .service-cont .service-item-left p {
@@ -222,7 +248,7 @@ textarea::placeholder {
 }
 
 .heading {
-  color: #002F80;
+  color: #002f80;
   text-align: center;
   margin: 2rem;
   font-size: 30px;
@@ -238,11 +264,11 @@ textarea::placeholder {
 
 .icons {
   font-size: 8rem;
-  color: #002F80;
+  color: #002f80;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .about-cont {
@@ -250,13 +276,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 2rem 0;
 }
 
@@ -269,7 +295,7 @@ p {
 .about-cont .left h1 {
   font-size: 30px;
   text-transform: capitalize;
-  color: #002F80;
+  color: #002f80;
   margin: 2rem 0 1rem 0;
 }
 
@@ -286,11 +312,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-cont .right .img-box {
@@ -321,11 +347,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .download-cont {
@@ -336,35 +362,35 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .download-item {
   width: 300px;
   height: 200px;
-  border-radius: 1rem;
+  border-radius: 0;
   -webkit-box-shadow: 1px 3px 1rem rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 3px 1rem rgba(0, 0, 0, 0.3);
-  margin: .7rem;
+  box-shadow: 1px 3px 1rem rgba(0, 0, 0, 0.3);
+  margin: 0.7rem;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .download-item p {
@@ -381,8 +407,8 @@ a {
   width: 100%;
   outline: none;
   border: none;
-  background-color: #6C63FF;
-  padding: .5rem 1.5rem;
+  background-color: #617ebd;
+  padding: 0.5rem 1.5rem;
   font-size: 15px;
   color: #f9f9f9;
   text-align: center;
@@ -403,15 +429,15 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #f9f9f9;
 }
 
