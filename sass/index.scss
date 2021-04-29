@@ -13,7 +13,7 @@ body{
 .header{
     min-height: 90vh;
     width: 100vw;
-    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.342)), url(../img/bg3.jpg);
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.342)), url(../img/bgimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,9 +44,10 @@ textarea::placeholder{
 
     .service-item{
         width: 100%;
+        padding: 1rem 0;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         &-left{
@@ -58,14 +59,20 @@ textarea::placeholder{
         }
 
         &-right{
-            height: 300px;
-            width: 300px;
+            height: 380px;
+            width: 600px;
             max-width: 30%;
-            margin: 2rem;
+            margin: 4rem ;
 
             img{
                 height: 100%;
                 width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:910px){
+            &-right{
+                display: none;
             }
         }
 
@@ -94,17 +101,22 @@ textarea::placeholder{
 p{
     font-size: 1.5rem;
 }
+
 .about-cont{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding: 2rem 0;
+    min-height: 80vh;
+    font-family: Montserrat;
 
     .left{
-        width: 50%;
-        min-width: 250px;
-        padding: 0 2rem;
+       flex: 1;
+       padding: 2rem;
+       min-height: 80vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
 
         h1{
             font-size: 30px;
@@ -121,28 +133,15 @@ p{
     }
 
     .right{
-        width: 50%;
-        min-width: 250px;
-        padding: 0 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .img-box{
-            height: 90%;
-            width: 90%;
-            min-height: 200px;
-            min-width: 200px;
-            overflow: hidden;
-
-            img{
-                height: 100%;
-                width: 100%;
-            }
-        }
+        width: 60%;
+        height: 100%;
+        background-image: url(../img/rightplace.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 80vh;
     }
 
-    @media only screen and (max-width:813px){
+    @media only screen and (max-width:910px){
         .left{
             width: 100%;
         }
@@ -153,6 +152,11 @@ p{
     }
 }
 
+.container{
+    max-width: 100% !important;
+    padding: none !important;
+    margin: 0 !important;
+}
 
 .about{
     min-height: 80vh;
